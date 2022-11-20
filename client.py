@@ -128,7 +128,7 @@ with socket(AF_INET, SOCK_STREAM) as s:
         s.send(message_upload)
         response,_ = get_tcp_packet(s)
         #print(response['status_msg'])
-        time.sleep(1)
+        
 
     total_time = time.time() - start_time
 
